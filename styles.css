@@ -1,37 +1,110 @@
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    color: white;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
     margin: 20px;
-}
-
-h1 {
-    text-align: center;
-}
-
-#matches,
-#booking {
-    margin-bottom: 30px;
-}
-
-form {
-    margin-top: 10px;
-}
-
-input[type="number"] {
-    width: 50px;
-}
-
-#match-list li {
+  }
+  
+  .match-list {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+  }
+  
+  .match-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
     cursor: pointer;
-}
-
-.selected-match {
-    background-color: #f2f2f2;
-}
-
-.error-message {
-    color: red;
-}
-
-.success-message {
-    color: green;
-}
+  }
+  
+  .match-card img {
+    width: 50px;
+    height: 50px;
+    object-fit: content;
+  }
+  
+  .match-card h2 {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  
+  .match-details {
+    flex: 1;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .match-details h2 {
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .match-details p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .match-details .ticket-count {
+    margin-bottom: 10px;
+  }
+  
+  .match-details .buy-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .match-details .buy-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+  
