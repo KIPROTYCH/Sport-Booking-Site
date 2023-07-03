@@ -9,12 +9,15 @@ body {
   }
   
   nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
     height: 60px;
-    width: 100%;
     color: white;
   }
   
@@ -103,6 +106,10 @@ body {
   }
   
   footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: black;
     color: white;
     padding: 20px;
