@@ -9,26 +9,33 @@
 </head>
 
 <body>
-    <h1>Match Booking Site</h1>
+    <header>
+        <nav>
+            <h1>Movie Booking App</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Bookings</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div id="matches">
-        <h2>Matches</h2>
-        <ul id="match-list"></ul>
+    <div class="container">
+        <div class="matches">
+            <h2>Match List</h2>
+            <div id="matchList"></div>
+        </div>
+        <div class="match-details">
+            <h2>Match Details</h2>
+            <div id="matchDetails"></div>
+        </div>
     </div>
 
-    <div id="booking">
-        <h2>Book Tickets</h2>
-        <form id="booking-form">
-            <label for="match-select">Select Match:</label>
-            <select id="match-select"></select>
-            <br>
-            <label for="ticket-quantity">Ticket Quantity:</label>
-            <input type="number" id="ticket-quantity" min="1">
-            <br>
-            <input type="submit" value="Book Now">
-        </form>
-    </div>
-
+    <footer>
+        <p>&copy; 2023 Movie Booking App. All rights reserved.</p>
+    </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
