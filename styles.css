@@ -1,117 +1,464 @@
+/* body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(./img/premier.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.688);
+  height: 60px;
+  color: white;
+  z-index: 1; 
+}
+
+.navbar img {
+  height: 100%;
+  max-height: 50px;
+  margin: 0;
+  padding: 0;
+  padding-left: 100px;
+}
+
+.navbar ul {
+  display: flex;
+  padding-right: 2rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+  margin-left: auto;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
+  margin-top: 5rem;
+  margin-top: 80px; 
+}
+
+.match-list {
+  flex: 1 0 60%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.match-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  gap: 4rem;
+}
+
+.match-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: content;
+}
+
+.match-card h2 {
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.match-details {
+  flex: 1 0 20%;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.match-details h2 {
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.match-details p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.match-details .ticket-count {
+  margin-bottom: 10px;
+}
+
+.match-details .buy-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.match-details .buy-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.homecontainer {
+  text-align: center;
+  margin-top: 180px; 
+  background-color: transparent;
+  padding: 20px;
+}
+
+.homecontainer h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.homecontainer p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.homebuttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.homebuttons a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.homebuttons button {
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.homebuttons button:hover {
+  background-color: darkorange;
+}
+
+.aboutcontainer {
+  text-align: center;
+  margin-top: 180px; 
+  padding: 20px;
+}
+
+.aboutcontainer h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.aboutcontainer p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.aboutcontainer ul {
+  text-align: left;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.aboutcontainer ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.aboutbuttons {
+  margin-top: 20px;
+}
+
+.aboutbuttons a {
+  text-decoration: none;
+}
+
+.aboutbuttons button {
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.aboutbuttons button:hover {
+  background-color: darkorange;
+}
+
+footer {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  z-index: 1; 
+} */
+
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    background-color: #F5F5F5;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    height: 60px;
-    color: white;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    margin: 0 10px;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 20px;
-  }
-  
-  .match-list {
-    flex: 1;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow-y: auto;
-  }
-  
-  .match-card {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
-  
-  .match-card img {
-    width: 50px;
-    height: 50px;
-    object-fit: content;
-  }
-  
-  .match-card h2 {
-    margin: 0 10px;
-    font-size: 16px;
-  }
-  
-  .match-details {
-    flex: 1;
-    background-color: black;
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .match-details h2 {
-    margin: 0;
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .match-details p {
-    font-size: 14px;
-    margin-bottom: 20px;
-  }
-  
-  .match-details .ticket-count {
-    margin-bottom: 10px;
-  }
-  
-  .match-details .buy-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  .match-details .buy-button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
-  
-  footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    padding: 20px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(./img/premier.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.688);
+  height: 60px;
+  color: white;
+  z-index: 1;
+}
+
+.navbar img {
+  height: 100%;
+  max-height: 50px;
+  margin: 0;
+  padding: 0;
+  padding-left: 100px;
+}
+
+.navbar ul {
+  display: flex;
+  padding-right: 2rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+  margin-left: auto;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
+  margin-top: 80px;
+}
+
+.match-list {
+  flex: 1 0 60%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  align-items: stretch; /* Added to ensure consistent height */
+}
+
+.match-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  gap: 4rem;
+}
+
+.match-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: content;
+}
+
+.match-card h2 {
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.match-details {
+  flex: 1 0 20%;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: stretch; /* Added to ensure consistent height */
+}
+
+.match-details h2 {
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.match-details p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.match-details .ticket-count {
+  margin-bottom: 10px;
+}
+
+.match-details .buy-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.match-details .buy-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.homecontainer {
+  text-align: center;
+  margin-top: 180px;
+  background-color: transparent; /* Removed to allow background image to show */
+  padding: 20px;
+}
+
+.homecontainer h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.homecontainer p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.homebuttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.homebuttons a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.homebuttons button {
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.homebuttons button:hover {
+  background-color: darkorange;
+}
+
+.aboutcontainer {
+  text-align: center;
+  margin-top: 180px;
+  padding: 20px;
+}
+
+.aboutcontainer h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.aboutcontainer p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.aboutcontainer ul {
+  text-align: left;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.aboutcontainer ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.aboutbuttons {
+  margin-top: 20px;
+}
+
+.aboutbuttons a {
+  text-decoration: none;
+}
+
+.aboutbuttons button {
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.aboutbuttons button:hover {
+  background-color: darkorange;
+}
+
+footer {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  z-index: 1;
+}
